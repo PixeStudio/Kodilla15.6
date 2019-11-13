@@ -1,0 +1,89 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 15px;
+  background-color: #555;
+}
+
+.board .create-column {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  padding: 5px 15px;
+  color: #444;
+  font-size: 1.1em;
+  font-weight: bold;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+.board .column-container {
+  overflow: overlay;
+}
+.board .column-container > div {
+  display: block;
+  float: left;
+}
+.board .column-container > div .column {
+  background: #efaf3a;
+  margin: 5px;
+  width: 250px;
+  min-height: 450px;
+  padding: 5px 15px;
+  position: relative;
+  box-shadow: 1px 1px 4px #222;
+  border: none;
+  border-radius: 3px;
+}
+.board .column-container > div .column .column-title {
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  text-shadow: 1px 1px 4px #111;
+}
+.board .column-container > div .column > .btn-delete {
+  position: absolute;
+  top: 14px;
+  right: 5px;
+  color: #ff0018;
+  font-weight: bold;
+  background: #111;
+  border: none;
+  border-radius: 3px;
+}
+.board .column-container > div .column .add-card {
+  margin: 5px auto;
+  display: block;
+  color: #444;
+  font-size: 1.1em;
+  font-weight: bold;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+.board .column-container > div .column .add-card::after {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  margin-top: 7px;
+  border-bottom: 3px solid #333;
+  content: '';
+  display: block;
+}
+.board .column-container > div .column .column-card-list {
+  list-style-type: square;
+  padding-left: 12px;
+}
+.board .column-container > div .column .column-card-list .card {
+  position: relative;
+  border-bottom: 1px solid #333;
+}
+.board .column-container > div .column .column-card-list .card .card-description {
+  display: inline;
+}
+.board .column-container > div .column .column-card-list .card .btn-delete {
+  color: #ee4433;
+  font-weight: bold;
+  background: #333;
+  border: none;
+  border-radius: 3px;
+}
